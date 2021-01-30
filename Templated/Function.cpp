@@ -1,6 +1,6 @@
 #include"Templated.h"
 
-template <typename T1, typename T2> void Print(T1 arr[], const T2 n)
+template <typename T> void Print(T arr[], const int n)
 {
 
     for (int i = 0; i < n; i++)
@@ -9,7 +9,7 @@ template <typename T1, typename T2> void Print(T1 arr[], const T2 n)
     }
     cout << endl;
 }
-template <typename T1, typename T2> void Print(T1 arr[ROWS][COLS], const T2 m, const T2 n)
+template <typename T> void Print(T arr[ROWS][COLS], const int m, const int n)
 {
     for (int i = 0; i < m; i++)
     {
@@ -22,7 +22,7 @@ template <typename T1, typename T2> void Print(T1 arr[ROWS][COLS], const T2 m, c
     cout << endl;
 }
 
-template <typename T1, typename T2> void Sort(T1 arr[], const T2 n)
+template <typename T> void Sort(T arr[], const int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -30,14 +30,14 @@ template <typename T1, typename T2> void Sort(T1 arr[], const T2 n)
         {
             if (arr[j] < arr[i])
             {
-                T1 buffer = arr[i];
+                T buffer = arr[i];
                 arr[i] = arr[j];
                 arr[j] = buffer;
             }
         }
     }
 }
-template <typename T1, typename T2> void Sort(T1 arr[ROWS][COLS], const T2 m, const T2 n)
+template <typename T> void Sort(T arr[ROWS][COLS], const int m, const int n)
 {
     for (int c = 0; c <= (m * n); c++)
     {
@@ -47,7 +47,7 @@ template <typename T1, typename T2> void Sort(T1 arr[ROWS][COLS], const T2 m, co
             {
                 if (arr[i][j] > arr[i][j + 1])
                 {
-                    T1 buffer = arr[i][j];
+                    T buffer = arr[i][j];
                     arr[i][j] = arr[i][j + 1];
                     arr[i][j + 1] = buffer;
                 }
@@ -60,7 +60,7 @@ template <typename T1, typename T2> void Sort(T1 arr[ROWS][COLS], const T2 m, co
             {
                 if (arr[j][i] > arr[j][i + 1])
                 {
-                    T1 buffer = arr[j][i];
+                    T buffer = arr[j][i];
                     arr[j][i] = arr[j][i + 1];
                     arr[j][i + 1] = buffer;
                 }
@@ -70,18 +70,18 @@ template <typename T1, typename T2> void Sort(T1 arr[ROWS][COLS], const T2 m, co
 
 }
 
-template <typename T1, typename T2> T1 Sum(T1 arr[], const T2 n)
+template <typename T> T Sum(T arr[], const int n)
 {
-    T1 sum = 0;
+    T sum = 0;
     for (int i = 0; i < n; i++)
     {
         sum += arr[i];
     }
     return sum;
 }
-template <typename T1, typename T2> T1 Sum(T1 arr[ROWS][COLS], const T2 m, const T2 n)
+template <typename T> T Sum(T arr[ROWS][COLS], const int m, const int n)
 {
-    T1 sum = 0;
+    T sum = 0;
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
@@ -92,33 +92,33 @@ template <typename T1, typename T2> T1 Sum(T1 arr[ROWS][COLS], const T2 m, const
     return sum;
 }
 
-template <typename T1, typename T2> double Avg(T1 arr[], const T2 n)
+template <typename T> double Avg(T arr[], const int n)
 {
     return (double)Sum(arr, n) / n;
 }
-template <typename T1, typename T2> double Avg(T1 arr[ROWS][COLS], const T2 m, const T2 n)
+template <typename T> double Avg(T arr[ROWS][COLS], const int m, const int n)
 {
     return (double)Sum(arr, m, n) / (m * n);
 }
 
-template <typename T1, typename T2> T1 minValueIn(T1 arr[], const T2 n)
+template <typename T> T minValueIn(T arr[], const int n)
 {
     Sort(arr, n);
     return arr[0];
 }
-template <typename T1, typename T2> T1 minValueIn(T1 arr[ROWS][COLS], const T2 m, const T2 n)
+template <typename T> T minValueIn(T arr[ROWS][COLS], const int m, const int n)
 {
     Sort(arr, m, n);
     return arr[0][0];
 
 }
 
-template <typename T1, typename T2> T1 maxValueIn(T1 arr[], const T2 n)
+template <typename T> T maxValueIn(T arr[], const int n)
 {
     Sort(arr, n);
     return arr[n - 1];
 }
-template <typename T1, typename T2> T1 maxValueIn(T1 arr[ROWS][COLS], const T2 m, const T2 n)
+template <typename T> T maxValueIn(T arr[ROWS][COLS], const int m, const int n)
 {
     Sort(arr, m, n);
     return arr[m - 1][n - 1];

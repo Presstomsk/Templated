@@ -41,10 +41,10 @@ void main()
     Sort(arr_char, n);
     Print(arr_char, n);
     cout << endl;
-    cout << "Сумма ASCII-кодов элементов массива: " << Sum(arr_char, n) << endl;
+    cout << "Сумма ASCII-кодов элементов массива: " << (int)Sum(arr_char, n) << endl;
     cout << "Среднее арифметическое ASCII-кодов элементов массива: " << Avg(arr_char, n) << endl;
-    cout << "Минимальный ASCII-код элемента массива: " << minValueIn(arr_char, n) << endl;
-    cout << "Максимальный ASCII-код элемента массива: " << maxValueIn(arr_char, n) << endl;
+    cout << "Минимальный ASCII-код элемента массива: " << (int)minValueIn(arr_char, n) << endl;
+    cout << "Максимальный ASCII-код элемента массива: " << (int)maxValueIn(arr_char, n) << endl;
     cout << endl;
 
     /*Двумерный массив типа int*/
@@ -80,9 +80,9 @@ void main()
     Sort(char_arr_2, ROWS, COLS);
     Print(char_arr_2, ROWS, COLS);
     cout << endl;
-    cout << "Сумма ASCII-кодов элементов массива: " << Sum(char_arr_2, ROWS, COLS) << endl;
+    cout << "Сумма ASCII-кодов элементов массива: " << (int)Sum(char_arr_2, ROWS, COLS) << endl;
     cout << "Среднее арифметическое ASCII-кодов элементов массива: " << Avg(char_arr_2, ROWS, COLS) << endl;
-    cout << "Минимальный ASCII-код элемента массива: " << minValueIn(char_arr_2, ROWS, COLS) << endl;
-    cout << "Максимальный ASCII-код элемента массива: " << maxValueIn(char_arr_2, ROWS, COLS) << endl;
+    cout << "Минимальный ASCII-код элемента массива: " << (int)minValueIn(char_arr_2, ROWS, COLS) << endl;
+    cout << "Максимальный ASCII-код элемента массива: " << (int)maxValueIn(char_arr_2, ROWS, COLS) << endl;
     cout << endl;
 }
