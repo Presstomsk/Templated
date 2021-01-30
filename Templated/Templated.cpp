@@ -1,4 +1,4 @@
-
+п»ї
 #include <iostream>
 using namespace std;
 
@@ -29,7 +29,7 @@ template <typename T1, typename T2> T1 maxValueIn(T1 arr[ROWS][COLS], const T2 m
 void main()
 {
     setlocale(LC_ALL, "");
-    /*Одномерный массив типа int*/
+    /*РћРґРЅРѕРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ С‚РёРїР° int*/
     const int n = 10;
     int arr[n];
 
@@ -39,12 +39,12 @@ void main()
     Sort(arr, n);
     Print(arr, n);
     cout << endl;
-    cout << "Сумма элементов массива: " << Sum(arr, n) << endl;
-    cout << "Среднее арифметическое элементов массива: " << Avg(arr, n) << endl;
-    cout << "Минимальный элемент массива: " << minValueIn(arr, n) << endl;
-    cout << "Максимальный элемент массива: " << maxValueIn(arr, n) << endl;
+    cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Sum(arr, n) << endl;
+    cout << "РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Avg(arr, n) << endl;
+    cout << "РњРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: " << minValueIn(arr, n) << endl;
+    cout << "РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: " << maxValueIn(arr, n) << endl;
     cout << endl;
-    /*Одномерный массив типа double*/
+    /*РћРґРЅРѕРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ С‚РёРїР° double*/
     double arr_double[n];
     FillRand(arr_double, n);
     Print(arr_double, n);
@@ -52,12 +52,12 @@ void main()
     Sort(arr_double, n);
     Print(arr_double, n);
     cout << endl;
-    cout << "Сумма элементов массива: " << Sum(arr_double, n) << endl;
-    cout << "Среднее арифметическое элементов массива: " << Avg(arr_double, n) << endl;
-    cout << "Минимальный элемент массива: " << minValueIn(arr_double, n) << endl;
-    cout << "Максимальный элемент массива: " << maxValueIn(arr_double, n) << endl;
+    cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Sum(arr_double, n) << endl;
+    cout << "РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Avg(arr_double, n) << endl;
+    cout << "РњРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: " << minValueIn(arr_double, n) << endl;
+    cout << "РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: " << maxValueIn(arr_double, n) << endl;
     cout << endl;
-    /*Одномерный массив типа char*/
+    /*РћРґРЅРѕРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ С‚РёРїР° char*/
 
     char arr_char[n];
     FillRand(arr_char, n);
@@ -66,49 +66,49 @@ void main()
     Sort(arr_char, n);
     Print(arr_char, n);
     cout << endl;
-    cout << "Сумма ASCII-кодов элементов массива: " << (int)Sum(arr_char, n) << endl;
-    cout << "Среднее арифметическое ASCII-кодов элементов массива: " << Avg(arr_char, n) << endl;
-    cout << "Минимальный ASCII-код элемента массива: " << (int)minValueIn(arr_char, n) << endl;
-    cout << "Максимальный ASCII-код элемента массива: " << (int)maxValueIn(arr_char, n) << endl;
+    cout << "РЎСѓРјРјР° ASCII-РєРѕРґРѕРІ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << (int)Sum(arr_char, n) << endl;
+    cout << "РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ ASCII-РєРѕРґРѕРІ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Avg(arr_char, n) << endl;
+    cout << "РњРёРЅРёРјР°Р»СЊРЅС‹Р№ ASCII-РєРѕРґ СЌР»РµРјРµРЅС‚Р° РјР°СЃСЃРёРІР°: " << (int)minValueIn(arr_char, n) << endl;
+    cout << "РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ ASCII-РєРѕРґ СЌР»РµРјРµРЅС‚Р° РјР°СЃСЃРёРІР°: " << (int)maxValueIn(arr_char, n) << endl;
     cout << endl;
 
-    /*Двумерный массив типа int*/
+    /*Р”РІСѓРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ С‚РёРїР° int*/
     int int_arr_2[ROWS][COLS];
     FillRand(int_arr_2, ROWS, COLS);
     Print(int_arr_2, ROWS, COLS);
     Sort(int_arr_2, ROWS, COLS);
     Print(int_arr_2, ROWS, COLS);
     cout << endl;
-    cout << "Сумма элементов массива: " << Sum(int_arr_2, ROWS, COLS) << endl;
-    cout << "Среднее арифметическое элементов массива: " << Avg(int_arr_2, ROWS, COLS) << endl;
-    cout << "Минимальный элемент массива: " << minValueIn(int_arr_2, ROWS, COLS) << endl;
-    cout << "Максимальный элемент массива: " << maxValueIn(int_arr_2, ROWS, COLS) << endl;
+    cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Sum(int_arr_2, ROWS, COLS) << endl;
+    cout << "РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Avg(int_arr_2, ROWS, COLS) << endl;
+    cout << "РњРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: " << minValueIn(int_arr_2, ROWS, COLS) << endl;
+    cout << "РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: " << maxValueIn(int_arr_2, ROWS, COLS) << endl;
     cout << endl;
 
-    /*Двумерный массив типа double*/
+    /*Р”РІСѓРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ С‚РёРїР° double*/
     double double_arr_2[ROWS][COLS];
     FillRand(double_arr_2, ROWS, COLS);
     Print(double_arr_2, ROWS, COLS);
     Sort(double_arr_2, ROWS, COLS);
     Print(double_arr_2, ROWS, COLS);
     cout << endl;
-    cout << "Сумма элементов массива: " << Sum(double_arr_2, ROWS, COLS) << endl;
-    cout << "Среднее арифметическое элементов массива: " << Avg(double_arr_2, ROWS, COLS) << endl;
-    cout << "Минимальный элемент массива: " << minValueIn(double_arr_2, ROWS, COLS) << endl;
-    cout << "Максимальный элемент массива: " << maxValueIn(double_arr_2, ROWS, COLS) << endl;
+    cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Sum(double_arr_2, ROWS, COLS) << endl;
+    cout << "РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Avg(double_arr_2, ROWS, COLS) << endl;
+    cout << "РњРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: " << minValueIn(double_arr_2, ROWS, COLS) << endl;
+    cout << "РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: " << maxValueIn(double_arr_2, ROWS, COLS) << endl;
     cout << endl;
 
-    /*Двумерный массив типа char*/
+    /*Р”РІСѓРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ С‚РёРїР° char*/
     char char_arr_2[ROWS][COLS];
     FillRand(char_arr_2, ROWS, COLS);
     Print(char_arr_2, ROWS, COLS);
     Sort(char_arr_2, ROWS, COLS);
     Print(char_arr_2, ROWS, COLS);
     cout << endl;
-    cout << "Сумма ASCII-кодов элементов массива: " << (int)Sum(char_arr_2, ROWS, COLS) << endl;
-    cout << "Среднее арифметическое ASCII-кодов элементов массива: " << Avg(char_arr_2, ROWS, COLS) << endl;
-    cout << "Минимальный ASCII-код элемента массива: " << (int)minValueIn(char_arr_2, ROWS, COLS) << endl;
-    cout << "Максимальный ASCII-код элемента массива: " << (int)maxValueIn(char_arr_2, ROWS, COLS) << endl;
+    cout << "РЎСѓРјРјР° ASCII-РєРѕРґРѕРІ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << (int)Sum(char_arr_2, ROWS, COLS) << endl;
+    cout << "РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ ASCII-РєРѕРґРѕРІ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°: " << Avg(char_arr_2, ROWS, COLS) << endl;
+    cout << "РњРёРЅРёРјР°Р»СЊРЅС‹Р№ ASCII-РєРѕРґ СЌР»РµРјРµРЅС‚Р° РјР°СЃСЃРёРІР°: " << (int)minValueIn(char_arr_2, ROWS, COLS) << endl;
+    cout << "РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ ASCII-РєРѕРґ СЌР»РµРјРµРЅС‚Р° РјР°СЃСЃРёРІР°: " << (int)maxValueIn(char_arr_2, ROWS, COLS) << endl;
     cout << endl;
 }
 
