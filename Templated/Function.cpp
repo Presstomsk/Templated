@@ -1,27 +1,5 @@
 #include"Templated.h"
 
-
-
-template <typename T1, typename T2> void FillRand(T1 arr[], const T2 n)
-{
-    for (int i = 0; i < n; i++)
-    {
-        arr[i] = rand() % 256;
-        arr[i] /= 10;
-    }
-}
-template <typename T1, typename T2> void FillRand(T1 arr[ROWS][COLS], const T2 m, const T2 n)
-{
-    for (int i = 0; i < m; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            arr[i][j] = rand() % 256;
-            arr[i][j] /= 10;
-        }
-    }
-}
-
 template <typename T1, typename T2> void Print(T1 arr[], const T2 n)
 {
 

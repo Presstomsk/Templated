@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Function.cpp" />
+    <ClCompile Include="FunctionOverloading.cpp" />
     <ClCompile Include="Templated.cpp" />
   </ItemGroup>
   <ItemGroup>
