@@ -1,4 +1,5 @@
 ﻿#include"Templated.h"
+#include"Function.cpp"
 
 void main()
 {
@@ -85,6 +86,3 @@ void main()
     cout << "Максимальный ASCII-код элемента массива: " << (int)maxValueIn(char_arr_2, ROWS, COLS) << endl;
     cout << endl;
 }
-
-
-

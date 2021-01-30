@@ -1,6 +1,7 @@
 #include"Templated.h"
 
 
+
 template <typename T1, typename T2> void FillRand(T1 arr[], const T2 n)
 {
     for (int i = 0; i < n; i++)
@@ -9,7 +10,6 @@ template <typename T1, typename T2> void FillRand(T1 arr[], const T2 n)
         arr[i] /= 10;
     }
 }
-
 template <typename T1, typename T2> void FillRand(T1 arr[ROWS][COLS], const T2 m, const T2 n)
 {
     for (int i = 0; i < m; i++)
@@ -31,7 +31,6 @@ template <typename T1, typename T2> void Print(T1 arr[], const T2 n)
     }
     cout << endl;
 }
-
 template <typename T1, typename T2> void Print(T1 arr[ROWS][COLS], const T2 m, const T2 n)
 {
     for (int i = 0; i < m; i++)
@@ -60,7 +59,6 @@ template <typename T1, typename T2> void Sort(T1 arr[], const T2 n)
         }
     }
 }
-
 template <typename T1, typename T2> void Sort(T1 arr[ROWS][COLS], const T2 m, const T2 n)
 {
     for (int c = 0; c <= (m * n); c++)
@@ -103,4 +101,52 @@ template <typename T1, typename T2> T1 Sum(T1 arr[], const T2 n)
     }
     return sum;
 }
+template <typename T1, typename T2> T1 Sum(T1 arr[ROWS][COLS], const T2 m, const T2 n)
+{
+    T1 sum = 0;
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            sum += arr[i][j];
+        }
+    }
+    return sum;
+}
+
+template <typename T1, typename T2> double Avg(T1 arr[], const T2 n)
+{
+    return (double)Sum(arr, n) / n;
+}
+template <typename T1, typename T2> double Avg(T1 arr[ROWS][COLS], const T2 m, const T2 n)
+{
+    return (double)Sum(arr, m, n) / (m * n);
+}
+
+template <typename T1, typename T2> T1 minValueIn(T1 arr[], const T2 n)
+{
+    Sort(arr, n);
+    return arr[0];
+}
+template <typename T1, typename T2> T1 minValueIn(T1 arr[ROWS][COLS], const T2 m, const T2 n)
+{
+    Sort(arr, m, n);
+    return arr[0][0];
+
+}
+
+template <typename T1, typename T2> T1 maxValueIn(T1 arr[], const T2 n)
+{
+    Sort(arr, n);
+    return arr[n - 1];
+}
+template <typename T1, typename T2> T1 maxValueIn(T1 arr[ROWS][COLS], const T2 m, const T2 n)
+{
+    Sort(arr, m, n);
+    return arr[m - 1][n - 1];
+
+}
+
+
+
 
